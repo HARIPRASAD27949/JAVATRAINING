@@ -3,10 +3,11 @@ class Armstrong
 {
 public static void main(String[] args)
 {
+	int count=0;
        Scanner sc=new Scanner(System.in);
    System.out.println("enter the size of an array:");
   int size=sc.nextInt();
-   System.out.println("enter"+size+" of elements");
+   System.out.println("enter  "+size+" of elements");
   int Arr[]=new int[size];
      for(int i=0;i<Arr.length;i++)
 {
@@ -27,12 +28,10 @@ Arr[i]=sc.nextInt();
    }
 if(sum==num1)
 {
-  System.out.println(num1+" "+"is an Armstrong number");
-}
-else
-{
-System.out.println(num1+" "+"is not Armstrong number ");
+	count++;
+  System.out.print(" "+num1+",");
 }
 }
+System.out.print("\n Total amstrong numbers in array is "+count+"\n");
 }
 }
